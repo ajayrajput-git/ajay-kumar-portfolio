@@ -1,217 +1,244 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajay Kumar - iOS Developer</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="design.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ajay Kumar | Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css"/>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Ajay Kumar</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    iOS Developer<br>
-                    <span class="gradient-text">Building Future</span>
-                </h1>
-                <p class="hero-subtitle">
-                    6+ years crafting high-performance iOS apps with Swift & SwiftUI. 
-                    10+ published apps on App Store specializing in Finance & Credit Repair.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Apps</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="phone-mockup">
-                    <div class="phone-screen">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="cursor-glow"></div>
+  <div class="noise"></div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Passionate iOS Developer with 6+ years of experience specializing in native app development using 
-                        <strong>Swift</strong> and <strong>SwiftUI</strong>. I've published 10+ apps on the App Store, 
-                        focusing on creating high-performance, intuitive user interfaces for Finance & Credit Repair applications.
-                    </p>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <i class="fab fa-apple"></i>
-                            <span>Xcode & SwiftUI</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>Firebase</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-credit-card"></i>
-                            <span>Stripe Payments</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-code-branch"></i>
-                            <span>Git & MVVM</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Mixpanel Analytics</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-store"></i>
-                            <span>App Store Deployment</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">AJAY.</div>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="experience-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">June 2024 - Present</div>
-                    <div class="timeline-content">
-                        <h3>Bridging Technologies</h3>
-                        <p>Maintained and enhanced Finance & Credit Repair applications. Integrated Microsoft Clarity & Mixpanel analytics. Collaborated with designers for pixel-perfect UI implementation.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">July 2021 - Aug 2023</div>
-                    <div class="timeline-content">
-                        <h3>Xicom Technologies</h3>
-                        <p>Developed equine booking platform, social networking apps, music streaming service. Helped build Android home automation by decoding iOS TCP/UDP logic.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">May 2019 - June 2021</div>
-                    <div class="timeline-content">
-                        <h3>WebAstral InfoSystem</h3>
-                        <p>Implemented image caching, Firestore real-time database, MVVM/MVC patterns. Architected live-streaming module using Agora SDK for fitness professionals.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Apps</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x600/1E3A8A/FFFFFF?text=CoolCredit" alt="CoolCredit">
-                    </div>
-                    <div class="project-info">
-                        <h3>CoolCredit</h3>
-                        <p>Finance & Credit Repair app with advanced features and smooth user experience.</p>
-                        <a href="https://apps.apple.com/us/app/coolcredit/id6450412664" target="_blank" class="app-link">
-                            <i class="fab fa-app-store-ios"></i> View on App Store
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x600/059669/FFFFFF?text=Lendee" alt="Lendee">
-                    </div>
-                    <div class="project-info">
-                        <h3>Lendee App</h3>
-                        <p>Comprehensive lending platform with secure payment integration and real-time updates.</p>
-                        <a href="https://apps.apple.com/us/app/lendee-app/id6737959895" target="_blank" class="app-link">
-                            <i class="fab fa-app-store-ios"></i> View on App Store
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x600/10B981/FFFFFF?text=EquiPro" alt="EquiPro Connect">
-                    </div>
-                    <div class="project-info">
-                        <h3>EquiPro Connect</h3>
-                        <p>Specialized booking platform for equine services with streamlined appointment scheduling.</p>
-                        <a href="https://apps.apple.com/us/app/equipro-connect/id1629886462" target="_blank" class="app-link">
-                            <i class="fab fa-app-store-ios"></i> View on App Store
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- HERO -->
+  <section class="hero">
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>ajythakur0001@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+91 8727070734</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Mohali, India</span>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="hero-content">
+      <span class="hero-tag">
+        MOBILE APP DEVELOPER • UI ENGINEER
+      </span>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Ajay Kumar. Built with ❤️ for iOS Development.</p>
+      <h1>
+        Building Modern <br />
+        Mobile Experiences <br />
+        with Premium UI.
+      </h1>
+
+      <p>
+        React Native developer focused on high-end mobile applications,
+        fintech interfaces, animations, and scalable frontend systems.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">
+          View Projects
+        </a>
+
+        <a
+          href="https://github.com/ajayrajput-git"
+          target="_blank"
+          class="btn-secondary"
+        >
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-gradient"></div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div class="section-title">
+      <span>ABOUT</span>
+      <h2>Crafting modern mobile experiences.</h2>
+    </div>
+
+    <div class="about-card glass-card">
+      <p>
+        I build visually polished and performance-focused mobile applications
+        using React Native and modern frontend technologies.
+      </p>
+
+      <p>
+        My focus is creating sleek interfaces, smooth animations,
+        scalable architecture, and premium user experiences inspired by
+        modern SaaS and fintech products.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+
+    <div class="section-title">
+      <span>FEATURED PROJECTS</span>
+      <h2>Selected Work</h2>
+    </div>
+
+    <!-- PROJECT 1 -->
+    <div class="project-card glass-card">
+
+      <div class="project-image green-glow">
+        <img src="project1.webp" alt="Marketplace App"/>
+      </div>
+
+      <div class="project-content">
+
+        <div class="project-label">
+          FINTECH • MARKETPLACE
         </div>
-    </footer>
-    
-    <script src="Code.js"></script>
+
+        <h3>Lending Marketplace App</h3>
+
+        <p>
+          Peer-to-peer lending request platform allowing users to
+          create marketplace requests or connect privately with friends and family.
+        </p>
+
+        <div class="tech-stack">
+          <span>React Native</span>
+          <span>Mobile UI</span>
+          <span>Fintech</span>
+          <span>Marketplace</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="#" class="btn-primary">Live Demo</a>
+          <a href="#" class="btn-secondary">Source</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card glass-card reverse">
+
+      <div class="project-image blue-glow">
+        <img src="project2.webp" alt="Equine App"/>
+      </div>
+
+      <div class="project-content">
+
+        <div class="project-label">
+          ENTERPRISE • HEALTHCARE
+        </div>
+
+        <h3>Equine Practitioner Reports</h3>
+
+        <p>
+          Session reporting and assessment software for equine practitioners
+          with advanced treatment tracking and anatomical visualization.
+        </p>
+
+        <div class="tech-stack">
+          <span>React Native</span>
+          <span>Healthcare</span>
+          <span>Reports</span>
+          <span>Enterprise</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="#" class="btn-primary">Live Demo</a>
+          <a href="#" class="btn-secondary">Source</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card glass-card">
+
+      <div class="project-image neon-glow">
+        <img src="project3.webp" alt="Credit App"/>
+      </div>
+
+      <div class="project-content">
+
+        <div class="project-label">
+          AI • CREDIT ANALYTICS
+        </div>
+
+        <h3>AI Credit Tracking Platform</h3>
+
+        <p>
+          AI-powered credit monitoring platform with dispute tracking,
+          utilization insights, reporting systems, and live dashboard analytics.
+        </p>
+
+        <div class="tech-stack">
+          <span>AI</span>
+          <span>Analytics</span>
+          <span>Fintech</span>
+          <span>Dashboard</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="#" class="btn-primary">Live Demo</a>
+          <a href="#" class="btn-secondary">Source</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="contact-card glass-card">
+
+      <span>LET'S BUILD SOMETHING</span>
+
+      <h2>
+        Have a project in mind?
+      </h2>
+
+      <p>
+        Available for freelance, startup, and mobile app projects.
+      </p>
+
+      <a
+        href="mailto:yourmail@gmail.com"
+        class="btn-primary"
+      >
+        Contact Me
+      </a>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
